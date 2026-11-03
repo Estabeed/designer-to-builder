@@ -34,3 +34,11 @@ The component and token directories are empty in the starting scaffold. The blan
 ## View locally
 
 Clone the repository and open `index.html` in a browser. No installation or build command is required.
+
+## How I will use this
+
+I am a product designer moving into building. I will use this repository to practise three things.
+
+1. Trace every visual decision back to Figma. I will open `src/tokens/tokens.css`, pick a variable such as `--component-accordion-background-active`, and find the matching variable in the Figma file. The goal is to see a token as a named design decision, not a number someone typed.
+2. Learn what the browser already does for me. The accordion uses `details` and `summary`, so opening, closing and keyboard use work with no JavaScript. The goal is to know what native HTML gives me before I ask anyone to write more code.
+3. Review the coding agent's work against the source of truth. I will write a plan prompt, read the result, and compare it with the Figma node using the prompts in `PROMPTS.md`. The goal is to spot what matches, what is missing and what was invented, then ask for the smallest fix.
