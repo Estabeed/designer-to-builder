@@ -14,22 +14,35 @@ The Figma file contains the component structure, open and closed states, content
 
 ```text
 .
+├── .gitignore
 ├── AGENTS.md
+├── PROMPTS.md
 ├── README.md
+├── figma.config.json
 ├── index.html
 └── src/
     ├── components/
+    │   └── accordion/
+    │       ├── Accordion.figma.ts
+    │       ├── accordion.css
+    │       └── accordion.html
     └── tokens/
+        └── tokens.css
 ```
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | The browser preview and home for the component markup. |
-| `src/components` | Styles for components created from the Figma design. |
-| `src/tokens` | Design variables represented as CSS custom properties. |
+| `index.html` | The home page. It previews the design tokens in light and dark and links to the accordion preview. |
+| `src/tokens/tokens.css` | Design variables from the Figma file as CSS custom properties: raw values first, then semantic and component tokens, with light as the default theme and a dark theme. |
+| `src/components/accordion/accordion.html` | The Accordion preview in light and dark, with open and closed states, built on `details` and `summary`. |
+| `src/components/accordion/accordion.css` | Styles for the Accordion, reading their values from the tokens. |
+| `src/components/accordion/Accordion.figma.ts` | The Code Connect template that links the Figma Accordion component to this HTML. |
+| `figma.config.json` | Tells the Code Connect tool where to find the `.figma.ts` files. |
 | `AGENTS.md` | Working instructions for coding agents using this repository. |
+| `PROMPTS.md` | The prompts and terminal commands used across the three sessions. |
+| `.gitignore` | Keeps local environment files, such as `.env`, out of Git. |
 
-The component and token directories are empty in the starting scaffold. The blank `index.html` page provides the browser entry point without introducing any design or implementation decisions in advance.
+`src/components` holds one folder per component and `src/tokens` holds the variables they share. The Accordion is the only component so far.
 
 ## View locally
 
