@@ -1,5 +1,7 @@
 # Designer to Builder
 
+> **My copy.** I use this copy of Figma's Designer to Builder project to learn how a Figma component becomes working code. I set it up on 3rd November 2026, merged my first three pull requests and deployed it on Vercel. The original text follows.
+
 This is the working codebase for the Figma **Designer to Builder** livestream series: a beginner-friendly walkthrough of turning a Figma component into reviewable code with Figma MCP and a coding agent.
 
 The project intentionally starts small. It uses native HTML and CSS, with no framework, JavaScript, dependencies, or build step, so every part of the implementation remains visible and understandable to designers who are new to code. The one external resource is the Google Sans Flex font, which the previews load from Google Fonts so that the type matches the Figma design.
